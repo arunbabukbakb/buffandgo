@@ -4,6 +4,7 @@ import './Header.css';
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [otherOpen, setOtherOpen] = useState(false);
 
     const toggleMenu = () => setMenuOpen(prev => !prev);
     const closeMenu = () => setMenuOpen(false);
@@ -19,12 +20,16 @@ export default function Header() {
                                 onClick={toggleMenu}
                                 aria-label="Toggle Menu"
                             >
-                                <span><span><span></span></span></span>
+                                ☰
                             </button>
 
+                            {/* Overlay background */}
+                            {menuOpen && <div className="menu-overlay" onClick={closeMenu} />}
+
                             {/* Navigation Menu */}
-                            <nav className="mean-nav" style={{ display: menuOpen ? 'block' : 'none' }}>
-                                <ul className="navbar-nav ms-auto">
+                            <nav className={`mean-nav ${menuOpen ? "open" : ""}`}>
+                                <button className="menu-close" onClick={closeMenu}>✕</button>
+                                <ul className="navbar-nav">
                                     <li className="nav-item">
                                         <Link to="/" className="nav-link" onClick={closeMenu}>Home</Link>
                                     </li>
@@ -88,7 +93,7 @@ export default function Header() {
 
                             <div className="others-options">
                                 <ul>
-                                    <li>
+                                    {/* <li>
                                         <a href="cart.html" className="icon">
                                             <img src="/images/svg/cart.svg" alt="image" />
                                             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -115,7 +120,7 @@ export default function Header() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <a href="contact-us.html" className="deafult-btn1"><span>Book Now</span></a>
                                     </li>
@@ -128,7 +133,7 @@ export default function Header() {
 
             <div className="others-option-for-responsive">
                 <div className="container">
-                    <div className="dot-menu">
+                    <div className="dot-menu" onClick={() => setOtherOpen(!otherOpen)}>
                         <div className="inner">
                             <div className="circle circle-one"></div>
                             <div className="circle circle-two"></div>
@@ -136,11 +141,11 @@ export default function Header() {
                         </div>
                     </div>
 
-                    <div className="container">
+                    <div className={`container ${otherOpen ? 'active' : ''}`}>
                         <div className="option-inner">
                             <div className="others-options d-flex">
                                 <ul>
-                                    <li>
+                                    {/* <li>
                                         <a href="cart.html" className="icon">
                                             <img src="/images/svg/cart.svg" alt="image" />
                                         </a>
@@ -163,7 +168,7 @@ export default function Header() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> */}
                                     <li>
                                         <a href="contact-us.html" className="deafult-btn1"><span>Book Now</span></a>
                                     </li>
