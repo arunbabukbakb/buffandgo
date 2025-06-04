@@ -1,6 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './Header.css';
+
+const menuList = [
+    { name: 'Home', link: '/' },
+    { name: 'About Us', link: '/about' },
+    { name: 'Our Services', link: '/services' },
+    { name: 'Account', link: '/account' },
+]
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -30,21 +37,21 @@ export default function Header() {
                             <nav className={`mean-nav ${menuOpen ? "open" : ""}`}>
                                 <button className="menu-close" onClick={closeMenu}>✕</button>
                                 <ul className="navbar-nav">
-                                    <li className="nav-item">
-                                        <Link to="/" className="nav-link" onClick={closeMenu}>Home</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/about" className="nav-link" onClick={closeMenu}>About Us</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/services" className="nav-link" onClick={closeMenu}>Our Services</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/shop" className="nav-link" onClick={closeMenu}>Shop</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/contact" className="nav-link" onClick={closeMenu}>Contact</Link>
-                                    </li>
+                                    {menuList.map((a, index) => {
+                                        return (
+                                            <li className="nav-item" key={index}>
+                                                <NavLink
+                                                    to={a.link}
+                                                    className={({ isActive }) =>
+                                                        `nav-link${isActive ? " active" : ""}`
+                                                    }
+                                                    onClick={closeMenu}
+                                                >
+                                                    {a.name}
+                                                </NavLink>
+                                            </li>
+                                        )
+                                    })}
                                 </ul>
                             </nav>
                         </div>
@@ -66,29 +73,20 @@ export default function Header() {
 
                         <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto">
-                                <li className="nav-item">
-                                    <Link to="/" className="nav-link active">
-                                        Home
-                                    </Link>
-                                </li>
-
-                                <li className="nav-item">
-                                    <Link to="/about" className="nav-link">
-                                        About Us
-                                    </Link>
-                                </li>
-
-                                <li className="nav-item">
-                                    <Link to="/services" className="nav-link">Our Services</Link>
-                                </li>
-
-                                <li className="nav-item">
-                                    <Link to="/shop" className="nav-link">Shop</Link>
-                                </li>
-
-                                <li className="nav-item">
-                                    <Link to="/contact" className="nav-link">Contact</Link>
-                                </li>
+                                {menuList.map((a, index) => {
+                                    return (
+                                        <li className="nav-item" key={index}>
+                                            <NavLink
+                                                to={a.link}
+                                                className={({ isActive }) =>
+                                                    `nav-link${isActive ? " active" : ""}`
+                                                }
+                                            >
+                                                {a.name}
+                                            </NavLink>
+                                        </li>
+                                    )
+                                })}
                             </ul>
 
                             <div className="others-options">
@@ -122,7 +120,7 @@ export default function Header() {
                                         </div>
                                     </li> */}
                                     <li>
-                                        <a href="contact-us.html" className="deafult-btn1"><span>Book Now</span></a>
+                                        <Link to="/" className="deafult-btn1"><span>Book Now</span></Link>
                                     </li>
                                 </ul>
                             </div>

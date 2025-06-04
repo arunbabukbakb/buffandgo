@@ -1,15 +1,16 @@
 import React from 'react'
 import PageTitle from '../../container/pagetitle/PageTitle'
-import { Services, Testimonial, Choose } from '../../container/home'
+import { Services, Testimonial, Choose, AboutUs } from '../../container/home'
 
-export default function AboutUs() {
+export default function AboutUsPage() {
     return (
         <>
             {/* PAGE TITLE */}
             <PageTitle title={"About Us"} link={'/about'} />
 
             {/* ABOUTUS */}
-            <div className="about-area ptb-100">
+            <AboutUs isPage={true} />
+            {/* <div className="about-area ptb-100 bg-F6F6F6">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
@@ -44,13 +45,13 @@ export default function AboutUs() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* SERVICES */}
-            <Services homeClass="bg-F6F6F6" />
+            <Services />
 
             {/* Video Area */}
-            <div className="video-area4">
+            {/* <div className="video-area4">
                 <div className="container">
                     <div className="section-title">
                         <span>WASHING VIDEO</span>
@@ -65,10 +66,10 @@ export default function AboutUs() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* Tesimonial area */}
-            <Testimonial homeClass="testimonials-area4" />
+            {/* <Testimonial homeClass="testimonials-area4" /> */}
 
             {/* Choose area */}
             <Choose homeClass="choose-area4" />

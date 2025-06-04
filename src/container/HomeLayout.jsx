@@ -8,7 +8,7 @@ export default function HomeLayout() {
     const location = useLocation();
     useEffect(() => {
         const handleScroll = () => {
-            setShow(window.scrollY > 300); // Show after scrolling 300px
+            //setShow(window.scrollY > 300); // Show after scrolling 300px
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
@@ -40,7 +40,7 @@ export default function HomeLayout() {
             {location.pathname === '/' ? <Footer /> : <InnerFooter />}
 
             {/* <!-- go to top start--> */}
-            <div className="go-top" onClick={scrollToTop}><i class='bx bx-chevron-up'></i></div>
+            <div className="go-top" onClick={scrollToTop}><i className='bx bx-chevron-up'></i></div>
             {/* <!-- go to top area end--> */}
         </>
 

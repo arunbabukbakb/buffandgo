@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Aboutus() {
+export default function Aboutus({ isPage }) {
   return (
     <div className="about-area ptb-100 bg-F6F6F6">
       <div className="container">
@@ -42,9 +42,10 @@ export default function Aboutus() {
                 </li>
               </ul> */}
               <div className="about-booking d-flex">
-                <Link to={'/about'} className="deafult-btn1">
+                {!isPage && <Link to={'/about'} className="deafult-btn1">
                   Read More About
-                </Link>
+                </Link>}
+
                 <h5>
                   Call for Book:
                   <a href="tel:+91 95674 98520">+91 95674 98520</a>

@@ -221,6 +221,10 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
   content: "\f134";
 }
 
+.flaticon-youtube:before {
+  content: "\f167"; /* example code – depends on your icon set */
+}
+
 .flaticon-linkedin:before {
   content: "\f135";
 }

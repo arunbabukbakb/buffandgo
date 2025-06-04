@@ -1,6 +1,7 @@
 import React from 'react'
 import PageTitle from '../../container/pagetitle/PageTitle'
 import Newsletter from '../../container/Newsletter/Newsletter'
+import { Link } from 'react-router-dom'
 
 export default function Services() {
     return (
@@ -14,96 +15,108 @@ export default function Services() {
                 <div className="container">
                     <div className="section-title">
                         <span>OUR SERVICES</span>
-                        <h3>A Variety of Wash Options for Your Car</h3>
+                        <h3>A Variety of Wash Options</h3>
                     </div>
 
                     <div className="row">
-                        <div className="col-lg-4 col-sm-6 col-md-6">
-                            <div className="service-card service-card9">
+                        <div className="col-lg-4 col-sm-6 col-md-6 pb-5">
+                            <div className="service-card service-card9 h-100 pb-0">
                                 <div className="service-image">
-                                    <a href="service-details.html"><img src="/images/service/service1.jpg" alt="image" /></a>
+                                    <img src="/images/service/service1.jpg" alt="image" />
                                 </div>
                                 <div className="service-content">
-                                    <h5><a href="service-details.html">Exterior Washing</a></h5>
-                                    <p>Lorem ipsum dolor sit amet, conse eiusdo
-                                        adipiscing elit, sed do eiusmod tempor inde consectetur adipiscing eli </p>
+                                    <h5>
+                                        Doorstep Car Wash
+                                    </h5>
+                                    <p>
+                                        We arrive at your location with everything needed for a
+                                        professional clean.{" "}
+                                    </p>{" "}
                                 </div>
-                                <a href="service-details.html" className="read">Read More</a>
+                                {/* <a href="service-details.html" className="read">
+                                    Read More
+                                </a> */}
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 col-md-6">
-                            <div className="service-card service-card9">
+                        <div className="col-lg-4 col-sm-6 col-md-6 pb-5">
+                            <div className="service-card service-card9 h-100 pb-0">
                                 <div className="service-image">
-                                    <a href="service-details.html"><img src="/images/service/service2.jpg" alt="image" /></a>
+                                    <img src="/images/service/service2.jpg" alt="image" />
                                 </div>
                                 <div className="service-content">
-                                    <h5><a href="service-details.html">Interior Washing
-                                    </a></h5>
-                                    <p>Lorem ipsum dolor sit amet, conse eiusdo
-                                        adipiscing elit, sed do eiusmod tempor inde consectetur adipiscing eli </p>
+                                    <h5>
+                                        Interior & Exterior Detailing
+                                    </h5>
+                                    <p>
+                                        From seats to shine, we detail your car inside and out with
+                                        care.
+                                    </p>
                                 </div>
-                                <a href="service-details.html" className="read">Read More</a>
+                                {/* <a href="service-details.html" className="read">
+                                    Read More
+                                </a> */}
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 col-md-6">
-                            <div className="service-card service-card9">
+                        <div className="col-lg-4 col-sm-6 col-md-6 pb-5">
+                            <div className="service-card service-card9 h-100 pb-0">
                                 <div className="service-image">
-                                    <a href="service-details.html"><img src="/images/service/service3.jpg" alt="image" /></a>
+                                    <img src="/images/service/service3.jpg" alt="image" />
                                 </div>
                                 <div className="service-content">
-                                    <h5><a href="service-details.html">Vacuum Cleaning
-                                    </a></h5>
-                                    <p>Lorem ipsum dolor sit amet, conse eiusdo
-                                        adipiscing elit, sed do eiusmod tempor inde consectetur adipiscing eli </p>
+                                    <h5>
+                                        Eco-Friendly Cleaning
+                                    </h5>
+                                    <p>
+                                        Safe, water-saving techniques that protect your vehicle and the
+                                        planet.
+                                    </p>
                                 </div>
-                                <a href="service-details.html" className="read">Read More</a>
+                                {/* <a href="service-details.html" className="read">
+                                    Read More
+                                </a> */}
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 col-md-6">
-                            <div className="service-card service-card9">
+                        <div className="col-lg-4 col-sm-6 col-md-6 pb-5">
+                            <div className="service-card service-card9 h-100 pb-0">
                                 <div className="service-image">
-                                    <a href="service-details.html"><img src="/images/service/service4.jpg" alt="image" /></a>
+                                    <img src="/images/service/service1.jpg" alt="image" />
                                 </div>
                                 <div className="service-content">
-                                    <h5><a href="service-details.html">Hand Car Wash
-                                    </a></h5>
-                                    <p>Lorem ipsum dolor sit amet, conse eiusdo
-                                        adipiscing elit, sed do eiusmod tempor inde consectetur adipiscing eli </p>
+                                    <h5>
+                                        Affordable Plans
+                                    </h5>
+                                    <p>
+                                        Transparent pricing that fits your needs without any hidden
+                                        costs involved.
+                                    </p>
                                 </div>
-                                <a href="service-details.html" className="read">Read More</a>
+                                {/* <a href="service-details.html" className="read">
+                                    Read More
+                                </a> */}
                             </div>
                         </div>
-                        <div className="col-lg-4 col-sm-6 col-md-6">
-                            <div className="service-card service-card9">
+                        <div className="col-lg-4 col-sm-6 col-md-6 pb-5">
+                            <div className="service-card service-card9 h-100 pb-0">
                                 <div className="service-image">
-                                    <a href="service-details.html"><img src="/images/service/service5.jpg" alt="image" /></a>
+                                    <img src="/images/service/service2.jpg" alt="image" />
                                 </div>
                                 <div className="service-content">
-                                    <h5><a href="service-details.html">Chemical Car Wash
-                                    </a></h5>
-                                    <p>Lorem ipsum dolor sit amet, conse eiusdo
-                                        adipiscing elit, sed do eiusmod tempor inde consectetur adipiscing eli </p>
+                                    <h5>
+                                        Convenient Scheduling
+                                    </h5>
+                                    <p>
+                                        Book your service when it suits you best — we’re always on your
+                                        time.
+                                    </p>
                                 </div>
-                                <a href="service-details.html" className="read">Read More</a>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-sm-6 col-md-6">
-                            <div className="service-card service-card9">
-                                <div className="service-image">
-                                    <a href="service-details.html"><img src="/images/service/service6.jpg" alt="image" /></a>
-                                </div>
-                                <div className="service-content">
-                                    <h5><a href="service-details.html">Steam Car Wash
-                                    </a></h5>
-                                    <p>Lorem ipsum dolor sit amet, conse eiusdo
-                                        adipiscing elit, sed do eiusmod tempor inde consectetur adipiscing eli </p>
-                                </div>
-                                <a href="service-details.html" className="read">Read More</a>
+                                {/* <a href="service-details.html" className="read">
+                                    Read More
+                                </a> */}
                             </div>
                         </div>
                     </div>
 
-                    <div className="result-pagination search-pagination">
+                    {/* <div className="result-pagination search-pagination">
                         <nav aria-label="Page navigation example">
                             <ul className="pagination">
                                 <li className="page-item">
@@ -131,8 +144,8 @@ export default function Services() {
                                 </li>
                             </ul>
                         </nav>
-                    </div>
-                    <img src="/images/foodls.png" className="foodls" alt="image" />
+                    </div> */}
+                    {/* <img src="/images/foodls.png" className="foodls" alt="image" /> */}
                 </div>
             </div>
             {/* <!-- Service area End --> */}
@@ -145,13 +158,13 @@ export default function Services() {
                             <div className="col-lg-8">
                                 <div className="help-content">
                                     <span>LET'S TALK</span>
-                                    <h3>Do You Need Help Your Car?</h3>
-                                    <p>Send us a message, or phone 1-800 234 567 between 09:00 and 18:00 Mon-Sat.</p>
+                                    <h3>Cleaning Made Simple — For Cars, Homes & More</h3>
+                                    <p>Send us a message, or phone +919567498520 | +919526162310 between 09:00 am and 6:00 pm.</p>
                                 </div>
                             </div>
                             <div className="col-lg-4">
                                 <div className="help-button">
-                                    <a href="contact-us.html" className="deafult-btn1">Request a Call Back</a>
+                                    <Link to="/contact" className="deafult-btn1">Request a Call Back</Link>
                                 </div>
                             </div>
                         </div>
@@ -177,24 +190,21 @@ export default function Services() {
                                             <i className="flaticon-hand-gesture"></i>
                                         </div>
                                         <h5>High Quality</h5>
-                                        <p>Lorem ipsum dolor sit amet, conse eius
-                                            adipiscing elit, sed do eiusm.</p>
+                                        <p>We use premium materials and methods for consistently excellent service.</p>
                                     </li>
                                     <li>
                                         <div className="work-icon">
                                             <i className="flaticon-room-service"></i>
                                         </div>
                                         <h5>Organic Products</h5>
-                                        <p>Lorem ipsum dolor sit amet, conse eius
-                                            adipiscing elit, sed do eiusm.</p>
+                                        <p>All cleaning solutions are eco-friendly and safe for your vehicle and environment.</p>
                                     </li>
                                     <li>
                                         <div className="work-icon">
                                             <i className="flaticon-chauffeur"></i>
                                         </div>
                                         <h5>Talented Workers</h5>
-                                        <p>Lorem ipsum dolor sit amet, conse eius
-                                            adipiscing elit, sed do eiusm.</p>
+                                        <p>Our skilled team delivers professional care with attention to every detail.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -212,24 +222,21 @@ export default function Services() {
                                             <i className="flaticon-car-rental"></i>
                                         </div>
                                         <h5>Eco Hand Wash</h5>
-                                        <p>Lorem ipsum dolor sit amet, conse eius
-                                            adipiscing elit, sed do eiusm.</p>
+                                        <p>Gentle, water-efficient hand washing that protects your car and nature.</p>
                                     </li>
                                     <li>
                                         <div className="work-icon">
                                             <i className="flaticon-car-1"></i>
                                         </div>
                                         <h5>Modern Equipments</h5>
-                                        <p>Lorem ipsum dolor sit amet, conse eius
-                                            adipiscing elit, sed do eiusm.</p>
+                                        <p>Equipped with the latest tools to ensure efficiency and top-notch results.</p>
                                     </li>
                                     <li>
                                         <div className="work-icon">
                                             <i className="flaticon-valet"></i>
                                         </div>
                                         <h5>Best Result</h5>
-                                        <p>Lorem ipsum dolor sit amet, conse eius
-                                            adipiscing elit, sed do eiusm.</p>
+                                        <p>We guarantee spotless finishes and customer satisfaction, every time.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -240,7 +247,7 @@ export default function Services() {
             {/* <!-- Workshop area end --> */}
 
             {/* <!-- Subscribe area start --> */}
-            <div className="subscribe-area ptb-100">
+            {/* <div className="subscribe-area ptb-100">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
@@ -260,7 +267,7 @@ export default function Services() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* <!-- Subscribe area end --> */}
         </>
     )

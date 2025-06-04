@@ -18,21 +18,20 @@ export default function Contact() {
                                     <span>CONTACT US</span>
                                     <h3>Let's Talk</h3>
                                 </div>
-                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                                    velit mollit Exercitation veniam consequat. Amet minim mollit non dese
-                                    amet sint. Velit officia veniam consequat.</p>
+                                <p>We’re here to help with all your car, home, and office cleaning needs. Whether you have a question or need a service, feel free to reach out — we’re just a call or message away.</p>
                                 <ul className="q-contact">
                                     <li>
                                         <i className="flaticon-phone-call"></i>
-                                        <a href="tel:11234567890">+1 (123) 456 7890</a>
+                                        <a href="tel:+91 95674 98520">+91 95674 98520 | +91 95261 62310</a>
                                     </li>
                                     <li>
                                         <i className="flaticon-email"></i>
-                                        <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#ed84838b82ad8e829798c38e8280"><span className="__cf_email__" data-cfemail="98f1f6fef7d8fbf7e2edb6fbf7f5">[email&#160;protected]</span></a>
+                                        buffandgoautocare@gmail.com
                                     </li>
                                     <li>
                                         <i className="flaticon-pin"></i>
-                                        123 Stanton, Virginia, USA
+                                        7/276, Ambalavattom, Edarikode Post,
+                                        Malappuram, Kerala – 676501, India
                                     </li>
                                 </ul>
                             </div>
@@ -84,8 +83,17 @@ export default function Contact() {
 
             {/* <!-- Map  area start --> */}
             <div className="contact-map-area">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.156180779021!2d4.350246915281314!3d50.84679206660858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47f4614f1f1%3A0xb03c355d8fe2cfb6!2sGrand%20Place!5e0!3m2!1sen!2sbd!4v1658434817034!5m2!1sen!2sbd" width="100%" height="740px"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.620264218302!2d76.05275177481612!3d10.974414855842287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba62a61d1d1ea41%3A0x56c5e49e44b7f63!2sAmbalavattom%2C%20Edarikode%2C%20Kerala%20676501!5e0!3m2!1sen!2sin!4v1717488777431!5m2!1sen!2sin"
+                    width="100%"
+                    height="740px"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
             </div>
+
             {/* <!-- Map  area end --> */}
         </>
     )

@@ -42,98 +42,98 @@ export default function Services({ homeClass }) {
         >
           <div className="service-card">
             <div className="service-image">
-              <a href="service-details.html">
+              <Link to="/services">
                 <img src="/images/service/service1.jpg" alt="image" />
-              </a>
+              </Link>
             </div>
             <div className="service-content">
               <h5>
-                <a href="service-details.html">Doorstep Car Wash</a>
+                <Link to="/services">Doorstep Car Wash</Link>
               </h5>
               <p>
                 We arrive at your location with everything needed for a
                 professional clean.{" "}
               </p>{" "}
             </div>
-            <a href="service-details.html" className="read">
+            <Link to="/services" className="read">
               Read More
-            </a>
+            </Link>
           </div>
           <div className="service-card">
             <div className="service-image">
-              <a href="service-details.html">
+              <Link to="/services">
                 <img src="/images/service/service2.jpg" alt="image" />
-              </a>
+              </Link>
             </div>
             <div className="service-content">
               <h5>
-                <a href="service-details.html">Interior & Exterior Detailing</a>
+                <Link to="/services">Interior & Exterior Detailing</Link>
               </h5>
               <p>
                 From seats to shine, we detail your car inside and out with
                 care.
               </p>
             </div>
-            <a href="service-details.html" className="read">
+            <Link to="/services" className="read">
               Read More
-            </a>
+            </Link>
           </div>
           <div className="service-card">
             <div className="service-image">
-              <a href="service-details.html">
+              <Link to="/services">
                 <img src="/images/service/service3.jpg" alt="image" />
-              </a>
+              </Link>
             </div>
             <div className="service-content">
               <h5>
-                <a href="service-details.html">Eco-Friendly Cleaning</a>
+                <Link to="/services">Eco-Friendly Cleaning</Link>
               </h5>
               <p>
                 Safe, water-saving techniques that protect your vehicle and the
                 planet.
               </p>
             </div>
-            <a href="service-details.html" className="read">
+            <Link to="/services" className="read">
               Read More
-            </a>
+            </Link>
           </div>
           <div className="service-card">
             <div className="service-image">
-              <a href="service-details.html">
+              <Link to="/services">
                 <img src="/images/service/service1.jpg" alt="image" />
-              </a>
+              </Link>
             </div>
             <div className="service-content">
               <h5>
-                <a href="service-details.html">Affordable Plans</a>
+                <Link to="/services">Affordable Plans</Link>
               </h5>
               <p>
                 Transparent pricing that fits your needs without any hidden
                 costs involved.
               </p>
             </div>
-            <a href="service-details.html" className="read">
+            <Link to="/services" className="read">
               Read More
-            </a>
+            </Link>
           </div>
           <div className="service-card">
             <div className="service-image">
-              <a href="service-details.html">
+              <Link to="/services">
                 <img src="/images/service/service2.jpg" alt="image" />
-              </a>
+              </Link>
             </div>
             <div className="service-content">
               <h5>
-                <a href="service-details.html">Convenient Scheduling</a>
+                <Link to="/services">Convenient Scheduling</Link>
               </h5>
               <p>
                 Book your service when it suits you best — we’re always on your
                 time.
               </p>
             </div>
-            <a href="service-details.html" className="read">
+            <Link to="/services" className="read">
               Read More
-            </a>
+            </Link>
           </div>
         </OwlCarousel>
       </div>
