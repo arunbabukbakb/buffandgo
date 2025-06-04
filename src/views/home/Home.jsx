@@ -16,9 +16,9 @@ export default function Home() {
             <Services />
             <Video />
             <Choose />
-            <Newsletter />
-            <Testimonial />
-            <Blog />
+            {/* <Newsletter /> */}
+            {/* <Testimonial /> */}
+            {/* <Blog /> */}
         </>
     )
 }

@@ -2028,7 +2028,8 @@ Pricing  Area Style
   border-radius: 15px;
   padding: 35px;
   text-align: center;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  height: 100%;
 }
 .pricing-card:hover .pricing-list {
   background: #F6F6F6;
@@ -2430,7 +2431,7 @@ Footer  Area Style
   position: relative;
   z-index: 1;
   padding-top: 80px;
-  margin-top: 42px;
+  /* margin-top: 42px; */
 }
 .footer-area::before {
   position: absolute;
