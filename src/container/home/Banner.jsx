@@ -94,16 +94,16 @@ export default function Banner() {
           </Link>
         </div>
 
-        <div className="hero-image">
+        {/* <div className="hero-image">
           <img
             src="/images/banner/banner-shape1.png"
             className="car-man"
             alt="image"
           />
-        </div>
+        </div> */}
 
         <form onSubmit={handleSubmit}>
-          <ul className="hero-search-box d-flex">
+          <ul className="hero-search-box d-flex w-100">
             <li>
               <label>
                 <i class="bx bx-map"></i>
@@ -170,18 +170,6 @@ export default function Banner() {
                 required
               />
             </li>
-            {/* <li className="last-box last-box2">
-              <label>
-                <i className="flaticon-calendar-1"></i>
-                Return Date
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="22/07/2024"
-                id="datepicker2"
-              />
-            </li> */}
             <li className="last-box">
               <button type="submit" className="deafult-btn1 style3">
                 Book Services

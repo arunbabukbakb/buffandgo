@@ -272,7 +272,7 @@
   }
   .hero-search-box li {
     list-style-type: none;
-    display: inline-block;
+    display: block;
     border-right: none;
     margin-bottom: 20px;
   }
