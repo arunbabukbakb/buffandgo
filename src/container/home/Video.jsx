@@ -1,6 +1,12 @@
 import React from "react";
 
 export default function Video() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="video-area pt-100 pb-70">
       <div className="container">
@@ -24,7 +30,7 @@ export default function Video() {
             </h3> */}
           </div>
           <div className="row justify-content-center">
-            <div className="col-lg-4 col-sm-6 col-md-6">
+            <div className="col-lg-4 col-sm-6 col-md-6 mb-3">
               <div className="pricing-card d-flex flex-column justify-content-between">
                 <h3>
                   <del className="text-muted">₹200</del> ₹199
@@ -41,13 +47,13 @@ export default function Video() {
                   </ul>
                 </div>
                 <div className="pricing-btn mt-auto">
-                  <a href="contact-us.html" className="deafult-btn1">
+                  <a onClick={scrollToTop} className="deafult-btn1">
                     Get Started
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-sm-6 col-md-6">
+            <div className="col-lg-4 col-sm-6 col-md-6 mb-3">
               <div className="pricing-card d-flex flex-column justify-content-between">
                 <h3>
                   <del className="text-muted">₹399</del> ₹349
@@ -70,20 +76,20 @@ export default function Video() {
                   </ul>
                 </div>
                 <div className="pricing-btn mt-auto">
-                  <a href="contact-us.html" className="deafult-btn1">
+                  <a onClick={scrollToTop} className="deafult-btn1">
                     Get Started
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-sm-6 col-md-6">
+            <div className="col-lg-4 col-sm-6 col-md-6 mb-3">
               <div className="pricing-card d-flex flex-column justify-content-between">
                 <h3>
                   <del className="text-muted">₹599</del> ₹549
                 </h3>
                 <h6>Premium Pack</h6>
                 <div className="pricing-list">
-                  <ul >
+                  <ul>
                     <li>
                       <p>Standard wash</p>
                     </li>
@@ -96,7 +102,7 @@ export default function Video() {
                   </ul>
                 </div>
                 <div className="pricing-btn mt-auto">
-                  <a href="contact-us.html" className="deafult-btn1">
+                  <a onClick={scrollToTop} className="deafult-btn1">
                     Get Started
                   </a>
                 </div>
@@ -110,7 +116,7 @@ export default function Video() {
             </h3> */}
           </div>
           <div className="row justify-content-center">
-            <div className="col-lg-3 col-sm-6 col-md-6">
+            <div className="col-lg-3 col-sm-6 col-md-6 mb-3">
               <div className="pricing-card d-flex flex-column justify-content-between">
                 <h3>
                   <del className="text-muted">₹600</del> ₹599
@@ -130,13 +136,13 @@ export default function Video() {
                   </ul>
                 </div>
                 <div className="pricing-btn mt-auto">
-                  <a href="contact-us.html" className="deafult-btn1">
+                  <a onClick={scrollToTop} className="deafult-btn1">
                     Get Started
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-sm-6 col-md-6">
+            <div className="col-lg-3 col-sm-6 col-md-6 mb-3">
               <div className="pricing-card d-flex flex-column justify-content-between">
                 <h3>
                   <del className="text-muted">₹799</del> ₹700
@@ -162,13 +168,13 @@ export default function Video() {
                   </ul>
                 </div>
                 <div className="pricing-btn mt-auto">
-                  <a href="contact-us.html" className="deafult-btn1">
+                  <a onClick={scrollToTop} className="deafult-btn1">
                     Get Started
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-sm-6 col-md-6">
+            <div className="col-lg-3 col-sm-6 col-md-6 mb-3">
               <div className="pricing-card d-flex flex-column justify-content-between">
                 <h3>
                   <del className="text-muted">₹1197</del> ₹999
@@ -197,13 +203,13 @@ export default function Video() {
                   </ul>
                 </div>
                 <div className="pricing-btn mt-auto">
-                  <a href="contact-us.html" className="deafult-btn1">
+                  <a onClick={scrollToTop} className="deafult-btn1">
                     Get Started
                   </a>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-sm-6 col-md-6">
+            <div className="col-lg-3 col-sm-6 col-md-6 mb-3">
               <div className="pricing-card d-flex flex-column justify-content-between">
                 <h3>
                   <del className="text-muted">₹1397</del> ₹1099
@@ -232,7 +238,7 @@ export default function Video() {
                   </ul>
                 </div>
                 <div className="pricing-btn mt-auto">
-                  <a href="contact-us.html" className="deafult-btn1">
+                  <a onClick={scrollToTop} className="deafult-btn1">
                     Get Started
                   </a>
                 </div>

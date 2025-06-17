@@ -1,24 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
-    Banner, AboutUs, Services, Feautures, Video,
-    Choose, Testimonial, Blog
-
+  Banner,
+  AboutUs,
+  Services,
+  Feautures,
+  Video,
+  Choose,
+  Testimonial,
+  Blog,
 } from "../../container/home";
 import Newsletter from "../../container/Newsletter/Newsletter";
 
-
 export default function Home() {
-    return (
-        <>
-            <Banner />
-            <Feautures />
-            <AboutUs />
-            <Services />
-            <Video />
-            <Choose />
-            {/* <Newsletter /> */}
-            {/* <Testimonial /> */}
-            {/* <Blog /> */}
-        </>
-    )
+
+  return (
+    <>
+      <Banner />
+      <Feautures />
+      <AboutUs />
+      <Services />
+      <Video />
+      <Choose />
+      {/* <Newsletter /> */}
+      {/* <Testimonial /> */}
+      {/* <Blog /> */}
+    </>
+  );
 }
