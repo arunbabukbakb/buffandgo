@@ -57,7 +57,7 @@ export default function Banner() {
     }
 
     // 🔐 Replace with your actual Server Key (keep it secret!)
-    const serverKey = "BGqqIYRKc602HAbCFtunWRWoFir_chwGWWCv8VIsDX2zdrNRMK97uTeHJhhytcaPvtOf9er8Xyw1T3GY2h1Pr00";
+    const serverKey = "BLInKz95HufIoN8dXBRwDVbAQGeY8MIVLHCaflvGKFwQBczOAV4p42fXZ5subIX39-ZpLzJZrud1Avd-yWq6uPE";
 
     await fetch("https://fcm.googleapis.com/fcm/send", {
       method: "POST",

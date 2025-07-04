@@ -44,7 +44,7 @@ export default function Account() {
           // ✅ Get FCM token
           const token = await getToken(messaging, {
             vapidKey:
-              "BGqqIYRKc602HAbCFtunWRWoFir_chwGWWCv8VIsDX2zdrNRMK97uTeHJhhytcaPvtOf9er8Xyw1T3GY2h1Pr00", // replace with your actual VAPID key
+              "BLInKz95HufIoN8dXBRwDVbAQGeY8MIVLHCaflvGKFwQBczOAV4p42fXZ5subIX39-ZpLzJZrud1Avd-yWq6uPE", // replace with your actual VAPID key
           });
 
           console.log("Admin FCM Token:", token);
