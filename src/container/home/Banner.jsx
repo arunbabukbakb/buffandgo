@@ -15,7 +15,7 @@ export default function Banner() {
   const bannerRef = useRef(null);
   const model = {
     place: '',
-    service: 'Basic',
+    service: 'Detailing',
     pickupdate: new Date().toISOString().split('T')[0],
     phone: '',
     createdAt: new Date() // 👈 required for TTL
@@ -130,7 +130,7 @@ export default function Banner() {
                   name="service"
                   required
                 >
-                  <option value="Basic">Basic</option>
+                  <option value="Detailing">Detailing</option>
                   <option value="Standard">Standard</option>
                   <option value="Permium">Permium</option>
                   <option value="Basic-Monthly">Basic-Monthly</option>

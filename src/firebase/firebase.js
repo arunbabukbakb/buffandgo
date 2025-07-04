@@ -7,6 +7,7 @@ import { getMessaging } from "firebase/messaging";
 const firebaseConfig = {
     apiKey: "AIzaSyDxgBU9JnB-N0pgmBU7jEZW9r8nvJRCoG8",
     authDomain: "buffandgo-6111d.firebaseapp.com",
+    databaseURL: "https://buffandgo-6111d-default-rtdb.asia-southeast1.firebasedatabase.app",
     projectId: "buffandgo-6111d",
     storageBucket: "buffandgo-6111d.firebasestorage.app",
     messagingSenderId: "363424446603",

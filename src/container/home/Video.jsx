@@ -33,16 +33,13 @@ export default function Video() {
             <div className="col-lg-4 col-sm-6 col-md-6 mb-3">
               <div className="pricing-card d-flex flex-column justify-content-between">
                 <h3>
-                  <del className="text-muted">₹200</del> ₹199
+                  <small style={{ color: "black" }}>Starting @</small><br /> ₹1199
                 </h3>
-                <h6>Basic</h6>
+                <h6>Detailing</h6>
                 <div className="pricing-list">
                   <ul className="ps-3">
                     <li>
-                      <p>Exterior Foam wash</p>
-                    </li>
-                    <li>
-                      <p>Tyre Polish</p>
+                      <p>Interior & Exterior Detailing</p>
                     </li>
                   </ul>
                 </div>
@@ -56,7 +53,7 @@ export default function Video() {
             <div className="col-lg-4 col-sm-6 col-md-6 mb-3">
               <div className="pricing-card d-flex flex-column justify-content-between">
                 <h3>
-                  <del className="text-muted">₹399</del> ₹349
+                   <small style={{ color: "black" }}>Starting @</small><br /> ₹399
                 </h3>
                 <h6>Standard Pack</h6>
                 <div className="pricing-list">
@@ -85,7 +82,7 @@ export default function Video() {
             <div className="col-lg-4 col-sm-6 col-md-6 mb-3">
               <div className="pricing-card d-flex flex-column justify-content-between">
                 <h3>
-                  <del className="text-muted">₹599</del> ₹549
+                   <small style={{ color: "black" }}>Starting @</small><br /> ₹599
                 </h3>
                 <h6>Premium Pack</h6>
                 <div className="pricing-list">
@@ -259,6 +256,6 @@ export default function Video() {
           alt="image"
         />
       </div>
-    </div>
+    </div >
   );
 }
